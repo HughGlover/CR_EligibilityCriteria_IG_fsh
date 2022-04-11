@@ -26,6 +26,8 @@ menu:
   Home: index.html
   Artifacts: artifacts.html
   Concepts and Constructs: ConceptsAndConstructs.html
+  Evidence Variable Explained: EvidenceVariableExplained.html
+  External Examples: ExternalExamples.html
 
 #groups:
 #  GroupA:
