@@ -1,0 +1,47 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: EligibilityIG
+canonical: http://BR&R/EligibilityIG.org
+name: CR_EligibilityCriteria_IG
+title: "HL7 FHIR Eligibility Criteria Representation"
+description: How to express Eligibility Criteria using HL7 FHIR
+status: draft # draft | active | retired | unknown
+version: 0.1.0
+fhirVersion: 5.0.0-snapshot1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+copyrightYear: 2022+
+releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+publisher:
+    name: HL7 International - BR&R Work Group
+    url: https://confluence.hl7.org/display/BRR/Biomedical+Research+and+Regulation
+dependencies:
+#   hl7.fhir.r5.core : dev
+#    hl7.fhir.r5.expansions : current
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
+  Concepts and Constructs: ConceptsAndConstructs.html
+
+#groups:
+#  GroupA:
+#    name: Base Objects
+#    description: The main objects that are used in many of the examples
+#    resources:
+#    - Patient/PAT219
+#    - Practitioner/SamGetWell
+#
+#  GroupB:
+#    name: Example fragments
+#    description: Sample example fragments that illustrate specifc points
+#    resources:
+#    - Group/Group-InclusionExclusion
+#    - ResearchStudy/ResearchStudy-Recruitment
+#    - ResearchStudy/ResearchStudy-Protocol
+#    - ResearchSubject/ResearchSubject-Consent
+  
+  
