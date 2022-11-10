@@ -21,5 +21,9 @@ A `Group` may be described explicitly by listing members through the `Member` ba
 
 
 
+What about **`EvidenceVariable`**?
+
+
+
 
 
