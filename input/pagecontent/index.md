@@ -23,6 +23,8 @@ A `Group` may be described explicitly by listing members through the `Member` ba
 
 What about **`EvidenceVariable`**?
 
+Brian Alper added this line to index.md to establish ability to commit change via GitHub.
+
 
 
 
