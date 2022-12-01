@@ -4,9 +4,9 @@ typora-root-url: ..\images
 
 ### Background
 
-This IG is concerned with representation of Eligibility criteria for subjects in a Research Study
+This IG is concerned with representation of Eligibility Criteria for subjects in a clinical trial.
 
-The Research Study itself is represented by use of a `ResearchStudy` resource and within that resource by use of the eligibility attribute within the `Recruitment` backbone element.  This is highlighted in the diagram below.
+The clinical trial may be represented by use of a `ResearchStudy` resource and within that resource by use of the eligibility attribute within the `Recruitment` backbone element.  This is highlighted in the diagram below.
 
 <img src="./ResearchStudy_UML.png" alt="ResearchStudy resource" style="zoom:100%;" />
 
