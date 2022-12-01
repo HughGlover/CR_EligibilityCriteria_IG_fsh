@@ -1,6 +1,3 @@
-// Zulip https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Group.20Criteria.20with.20OR.20or.20AND
-
-
 Alias: NCIT = http://ncimeta.nci.nih.gov
 Alias: SCT = http://snomed.info/sct
 Alias: LOCAL = http://bluewaveinformatics.co.uk/terminology
@@ -66,3 +63,9 @@ Description: "Set of permitted values for Group Characteristic Code"
 * #root "Inclusion Exclusion Criterion" "The root of the entire tree"
 * #inc "Inclusion criteria" "Parent of all inclusion critieria"
 * #exc "Exclusion criteria" "Parent of all exclusion critieria"
+
+Profile: StudyEligibilityCriteria
+Parent: EvidenceVariable
+Id: study-eligibility-criteria
+Title: "Study Eligibility Criteria"
+Description: "Inclusion and exclusion criteria for a clinical trial or other research study"
