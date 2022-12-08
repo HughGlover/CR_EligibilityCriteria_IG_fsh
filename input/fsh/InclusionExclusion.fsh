@@ -10,52 +10,6 @@ Usage: #example
 * identifier[0].value = "H2Q-MC-LZZT with version"
 * status = #draft
 
-Instance: Group-01
-InstanceOf: Group
-* type = #person
-* actual = false
-* name = "InclusionExclusion Criteria"
-* member[0].entity[Group] = Reference(Group-02)
-* member[+].entity[Group] = Reference(Group-03)
-
-Instance: Group-02
-InstanceOf: Group
-* type = #person
-* actual = false
-* name = "Inclusion Criteria"
-* member[0].entity[Group] = Reference(Group-02-A)
-* member[+].entity[Group] = Reference(Group-02-B)
-
-Instance: Group-02-A
-InstanceOf: Group
-* type = #person
-* actual = false
-* name = "Inclusion Criteria"
-* characteristic[0].code = GroupCharacteristicCode#root "Inclusion Exclusion Criterion"
-* characteristic[=].valueCodeableConcept = SCT#248153007 "male"
-* characteristic[=].exclude = false
-
-Instance: Group-02-B
-InstanceOf: Group
-* type = #person
-* actual = false
-* name = "Inclusion Criteria"
-* characteristic[0].code = GroupCharacteristicCode#root "Inclusion Exclusion Criterion"
-* characteristic[=].valueCodeableConcept = SCT#161562002 "H/O: Psoriasis"
-* characteristic[=].exclude = false
-* characteristic[+].code = GroupCharacteristicCode#root "Inclusion Exclusion Criterion"
-* characteristic[=].valueCodeableConcept = SCT#267036007 "Breathlessness"
-* characteristic[=].exclude = false
-
-Instance: Group-03
-InstanceOf: Group
-* type = #person
-* actual = false
-* name = "Exclusion Criteria"
-* member[0].entity[Group] = Reference(Group-03-A)
-* member[+].entity[Group] = Reference(Group-03-B)
-
-
 CodeSystem:  GroupCharacteristicCode
 Id: GroupCharacteristicCode-code-system
 Title: "Group Characteristic Code Code System"
@@ -69,3 +23,7 @@ Parent: EvidenceVariable
 Id: study-eligibility-criteria
 Title: "Study Eligibility Criteria"
 Description: "Inclusion and exclusion criteria for a clinical trial or other research study"
+* subtitle 0..0
+* characteristic.definitionCodeableConcept ^definition = "For the StudyEligibilityCriteria Profile, definitionByTypeAndValue is preferred over definitionCodeableConcept where structured data with type/value pairs is more clear for matching algorithms, and use of the description element without a definitionXXX element is preferred for characteristics without structured expression of the definition. The defintiionCodeableConcept element is thus limited in use to characteristics defined by a single coding."
+* handling 0..0
+* category 0..0
